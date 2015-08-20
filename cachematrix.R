@@ -29,10 +29,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 # This function calculate the inverse of the matrix stored in the object.
-# If the inverse matrix has not been calculated before, it uses the function solve()
-# to compute the inverse and cache it. If the inverse of the stored matrix
-# has been previously computed, it returns the previous calculation cached
-# in the object
+# If the inverse matrix has not been computed before, it uses the function solve()
+# to compute the inverse and then cache it in the object. If the inverse of the 
+# stored matrix has been previously computed, the function returns the previous
+# calculation cached in the object
 cacheSolve <- function(x, ...) {
 ## Return a matrix that is the inverse of 'x'
     im <- x$getsolve()
